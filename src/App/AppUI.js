@@ -53,7 +53,7 @@ export function AppUI() {
         {loading && <>cargando 🤠</>}
         {error && <>error 🤠</>}
       </Grid>
-      <Grid container justifyContent={"flex-end"} alignSelf={"flex-end"}>
+      <Grid container justifyContent={"flex-end"}>
         <CreateTodoButton onOpen={() => handleOpen()} />
         <CreateTodoForm createItem={() => createItem(newValue)} />
       </Grid>
